@@ -46,7 +46,7 @@ body {
   color: #f0f6fc;
 }
 
-.start_btn,
+/* .start_btn, */
 .start_btn button {
   font-size: 25px;
   font-weight: 500;
@@ -55,6 +55,7 @@ body {
   border-radius: 5px;
   background: #08354b;
 }
+
 .start_test {
   width: 650px;
   height: 450px;
@@ -70,10 +71,7 @@ body {
   width: 50px;
   margin: 0;
 }
-.start_h3 img {
-  width: 18px;
-  margin: 0;
-}
+
 .start_h2 {
   font-size: 25px;
   top: 30%;
@@ -91,8 +89,10 @@ body {
 }
 .start_btn {
   top: 80%;
+  padding: 8px;
+  border-radius: 5px;
   cursor: pointer;
-  background: #004085;
+  background: #007bff;
 }
 .start_btn button {
   outline: none;
