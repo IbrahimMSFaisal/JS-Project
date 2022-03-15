@@ -1,5 +1,6 @@
-let start_btn = document.querySelector(".start_btn button");
+let start_btn    = document.querySelector(".start_btn button");
 let test_box     = document.querySelector(".test_box");
+let finish_test  = document.querySelector(".quit");
 let result_box   = document.querySelector(".result_box");
 let option_list  = document.querySelector(".option_list");
 let time_line    = document.querySelector("header .time_line");
@@ -49,7 +50,7 @@ restart_test.onclick = ()=>{
     startTimer(120);
     startTimerLine(widthValue);
     timeText.textContent = "Time Left";
-    next_btn.classList.remove("show");on
+    next_btn.classList.remove("show");
 }
 
 
@@ -76,11 +77,14 @@ next_btn.onclick = ()=>{
     }
 }
 
+finish_test.onclick = ()=>{
+    showResult()
+}
 
 function showQuetions(index){
     const que_text = document.querySelector(".que_text");
 
-    let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
+    let que_tag = '<span>'+ questions[index].numb + ". " +  questions[index].question +'</span>';
     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
@@ -94,6 +98,7 @@ function showQuetions(index){
     for(i=0; i < option.length; i++){
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
+    finish_test.classList.add("show"); 
 }
 let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
@@ -122,7 +127,7 @@ function optionSelected(answer){
     for(i=0; i < allOptions; i++){
         option_list.children[i].classList.add("disabled"); 
     }
-    next_btn.classList.add("show"); 
+    next_btn.classList.add("show");
 }
 
 function showResult(){
@@ -152,20 +157,7 @@ function startTimer(time){
         }
         if(time < 0){ 
             clearInterval(counter); 
-            const allOptions = option_list.children.length; 
-            let correcAns = questions[que_count].answer; 
             showResult();
-
-            for(i=0; i < allOptions; i++){
-                if(option_list.children[i].textContent == correcAns){ 
-                    option_list.children[i].setAttribute("class", "option correct"); 
-                    option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); 
-                }
-            }
-            for(i=0; i < allOptions; i++){
-                option_list.children[i].classList.add("disabled"); 
-            }
-            next_btn.classList.add("show"); 
         }
     }
 }
