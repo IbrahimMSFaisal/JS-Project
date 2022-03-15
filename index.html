@@ -12,7 +12,19 @@
 </head>
 <body>
     <!-- start Quiz button -->
-    <div class="start_btn"><button>Start Quiz</button></div>
+    <div class="start_test">
+        <h1 class="start_h1"><img src="ITI logo.png" alt=""></h1>
+        <h2 class="start_h2">Web Test</h2>
+        <h3 class="start_h3">Select your name from this list !<img src="arrow_down.png" alt=""></h3>
+        <select  class="start_select" name="" id="">
+            <option value="Ahmed Ali">Ahmed Ali</option>
+            <option value="Mohammed Sayed">Mohammed Sayed</option>
+            <option value="Ibrahim tagwifa">Ibrahim tagwifa </option>
+            <option value="Ali Fawzy">Ali Fawzy</option>
+        </select>
+        <div class="start_btn"><button>Start Test</button></div>
+    </div>
+    
 
     <!-- Info Box -->
     <div class="info_box">
@@ -36,7 +48,7 @@
             <div class="title">Awesome Quiz Application</div>
             <div class="timer">
                 <div class="time_left_txt">Time Left</div>
-                <div class="timer_sec">15</div>
+                <div class="timer_sec">120</div>
             </div>
             <div class="time_line"></div>
         </header>
@@ -52,24 +64,24 @@
         <!-- footer of Quiz Box -->
         <footer>
             <div class="total_que">
-                <!-- Here I've inserted Question Count Number from JavaScript -->
-            </div>
-            <button class="next_btn">Next Que</button>
+                <!--Here I've inserted Question Count Number from JavaScript -->
+            </div> 
+            <button class="next_btn">Next Ques</button>
         </footer>
     </div>
 
     <!-- Result Box -->
     <div class="result_box">
         <div class="icon">
-            <i class="fas fa-crown"></i>
+            <img src="res.png" alt="">
         </div>
-        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="complete_text">You've completed the test!</div>
         <div class="score_text">
             <!-- Here I've inserted Score Result from JavaScript -->
         </div>
         <div class="buttons">
-            <button class="restart">Replay Quiz</button>
-            <button class="quit">Quit Quiz</button>
+            <button class="restart">Replay test</button>
+            <button class="quit">Finish test</button>
         </div>
     </div>
 
