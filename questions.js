@@ -1,6 +1,17 @@
 let questions = [
     {
     numb: 1,
+    question: "Full form of URL is ?",
+    answer: "Uniform Resource Locator",
+    options: [
+      "Uniform Registered Link",
+      "Uniform Resource Locator",
+      "Uniform Resourse Link",
+      "Unified Resourse  Link"
+    ]
+  },
+  {
+    numb: 2,
     question: "What does HTML stand for?",
     answer: "Hyper Text Markup Language",
     options: [
@@ -11,7 +22,7 @@ let questions = [
     ]
   },
     {
-    numb: 2,
+    numb: 3,
     question: "What does CSS stand for?",
     answer: "Cascading Style Sheet",
     options: [
@@ -22,7 +33,7 @@ let questions = [
     ]
   },
     {
-    numb: 3,
+    numb: 4,
     question: "What does PHP stand for?",
     answer: "Hypertext Preprocessor",
     options: [
@@ -33,7 +44,7 @@ let questions = [
     ]
   },
     {
-    numb: 4,
+    numb: 5,
     question: "What does SQL stand for?",
     answer: "Structured Query Language",
     options: [
@@ -44,13 +55,13 @@ let questions = [
     ]
   },
     {
-    numb: 5,
+    numb: 6,
     question: "What does XML stand for?",
     answer: "Extensible Markup Language",
     options: [
       "Extensible Markup Language",
       "Executable Multiple Language",
-      "ExTra Multi-Program Language",
+      "Extra Multi-Program Language",
       "Examine Multiple Language"
     ]
   }

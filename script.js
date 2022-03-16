@@ -72,6 +72,7 @@ next_btn.onclick = ()=>{
     }
 }
 
+
 finish_test.onclick = ()=>{
     showResult()
 }
